@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="11-3三栏flex" />
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .contain{
+      max-width: 800px;
+      border: 1px solid;
+      margin: 0 auto;
+      display: flex;
+    }
+    aside{
+      width: 150px;
+      background: grey;
+      min-height: 300px;
+      border: 1px solid;
+      order: 1;
+    }
+    main{
+      min-height: 500px;
+      background: black;
+      border: 1px solid;
+      flex-grow: 1;
+      order: 2;
+    }
+    .contain div{
+      border: 1px solid;
+      min-height: 300px;
+      background: grey;
+      width: 140px;
+      order: 3;
+    }
+  </style>
+</head>
+<body>
+<div class="contain clearfix">
+  <aside></aside>
+  <div></div>
+  <main></main>
+</div>
+</body>
+</html>

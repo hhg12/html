@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 317634 */
+  src: url('//at.alicdn.com/t/font_6168ogewfc3xflxr.eot');
+  src: url('//at.alicdn.com/t/font_6168ogewfc3xflxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_6168ogewfc3xflxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_6168ogewfc3xflxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_6168ogewfc3xflxr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:24px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  font-family: "微软雅黑";
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.resume{
+  width: 1024px;
+  margin: 0 auto;
+}
+header .left{
+  float: left;
+  width: 512px;
+  background: grey;
+}
+header .left img {
+  border-radius: 100px;
+  vertical-align: middle;
+}
+header .left>div {
+  display:inline-block;
+  background: red;
+  vertical-align: middle;
+}
+header .left h3 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+header .right{
+  float: left;
+  width: 512px;
+  background: grey;
+}
+header .right>h3 {
+  font-size: 24px;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+header .right ul {
+  font-size: 20px;
+  padding: 0;
+  list-style: none;
+  margin-top: 5px;
+}
+header .right li {
+  padding: 3px 0;
+}
+header .right li>span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 
+}
+/*上面是头部，下面开始内容*/
+main .main-layout>h3 {
+  width: 512px;
+  font-size: 24px;
+  border-bottom: 3px solid grey;
+  text-transform: uppercase;
+  padding: 5px;
+}
+main .main-layout div {
+  padding: 0 40px 0 80px;
+  border-left: 1px solid;
+  position: relative;
+}
+main .main-layout div>h4 {
+  margin: 0;
+}
+main .main-layout div:before {
+  content: '';
+  display: inline-block;
+  border: 8px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -8px;
+}
+/*上面是头内容，下面开始尾部*/
+.icon-yuanquanjiahao:before { 
+  content: "\e620"; 
+  position: absolute;
+  top: 1px;
+  left: -12px;
+}
+footer .footer-layout{
+  width: 512px;
+  float: left;
+  background: grey;
+}
+footer .footer-layout>h3 {
+  width: 460px;
+  font-size: 24px;
+  border-bottom: 3px solid red;
+  text-transform: uppercase;
+  padding: 5px;
+}
+footer .footer-layout div {
+  padding: 0 40px 0 80px;
+  border-left: 1px solid;
+  position: relative;
+}
+footer .footer-layout div>h4 {
+  margin: 0;
+}
+/*尾部右边*/
+footer .right li{
+  width: 200px;
+  float: left;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  list-style: none;
+}
+footer .right li:before {
+  content: "\e620";
+  position: relative;
+  left: -30px;
+}

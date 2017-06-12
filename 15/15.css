@@ -1,0 +1,389 @@
+body {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#header {
+  width: 100%;
+  background: black;
+  position: fixed;
+  z-index: 10;
+}
+#header .contain {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+#header .contain>a {
+  display: inline-block;
+  color: orange;
+  font-size: 1.5em;
+  line-height: 20px;
+  padding: 15px;
+  float: left;
+}
+#header .contain ul {
+  margin: 0;
+}
+#header .contain li>a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  text-transform: uppercase;
+}
+#header .contain li {
+  list-style: none;
+  float: right;
+  border-radius: 3px;
+}
+#header .contain li:hover{
+  background: orange;
+}
+/*welcome部分*/
+.welcome {
+  background: url("http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.welcome .content {
+  color: white;
+  padding: 200px 0;
+}
+.welcome .content>h2 {
+  font-size: 32px;
+  font-style:italic;
+  margin-bottom: 25px;
+}
+.welcome .content>h1 {
+  font-size: 54px;
+  margin-bottom: 60px;
+}
+.welcome .content>a {
+  padding: 20px 36px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background: orange;
+  font-weight: bold;
+  border-radius: 3px;
+}
+/*service* ***************************************************************/
+@font-face {
+  font-family: 'iconfont';  /* project id 317634 */
+  src: url('//at.alicdn.com/t/font_i0ktfox6k8iwwmi.eot');
+  src: url('//at.alicdn.com/t/font_i0ktfox6k8iwwmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_i0ktfox6k8iwwmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_i0ktfox6k8iwwmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_i0ktfox6k8iwwmi.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:50px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+.service .content{
+  text-align: center;
+  margin: 150px 0;
+}
+.service .content>h1 {
+  text-transform: uppercase;
+}
+.service .content>p {
+  font-style:italic;
+  color: #777;
+}
+.icon-yuanquanjiahao:before { 
+  content: "\e61c";
+  display: inline-block;
+  background: orange;
+  padding: 25px;
+  border-radius: 50%;
+}
+.icon-responsive:before {
+  content: "\e606";
+  display: inline-block;
+  background: orange;
+  padding: 25px;
+  border-radius: 50%;
+}
+.icon-security:before {
+  content: "\e661";
+  display: inline-block;
+  background: orange;
+  padding: 25px;
+  border-radius: 50%;
+}
+.service .content .main {
+  display: flex;
+  margin: 40px 106px;
+  justify-content: space-between;
+}
+.service .content .main .block {
+  width: 360px;
+}
+.service .content .main .block p{
+  color: grey;
+}
+/*portfolio* ***************************************************************/
+.portfolio {
+  background: #E8E8E8;
+}
+.portfolio .content{
+  text-align: center;
+  padding: 150px 0;
+}
+.portfolio .content>h1 {
+  text-transform: uppercase;
+}
+.portfolio .content>p {
+  font-style:italic;
+  color: #777;
+}
+.portfolio .content .main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 106px;
+  justify-content: space-between;
+}
+.portfolio .content .design {
+  background: white;
+  margin-bottom: 20px;
+}
+.portfolio .content .design img {
+  width: 360px;
+}
+.portfolio .content .design a>div {
+  content: '';
+  width: 360px;
+  height: 260px;
+  position: absolute;
+  background: orange;
+  opacity: .7;
+  display: none;
+}
+.portfolio .content .design a:hover>div {
+  display: block;
+}
+.portfolio .content .design>p {
+  margin-top: 0;
+}
+.portfolio .content .design>h3 {
+  margin-bottom: 5px;
+}
+/*about* ***************************************************************/
+.about {
+  text-align: center;
+}
+.about>h1 {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  margin-top: 150px;
+}
+.about>p {
+  font-style:italic;
+  color: #777;
+}
+.timeline {
+  margin: 0 auto 125px;
+  max-width: 1140px;
+  list-style: none;
+  margin-top: 70px;
+  padding: 0;
+  
+}
+.timeline img {
+  width: 156px;
+  border-radius: 50%;
+  border: 6px solid #f1f1f1;
+}
+.timeline li{
+  position: relative;
+  padding-bottom: 125px;
+}
+.timeline li:after{
+  content: '';
+  height: 100%;
+  border: 2px solid #f1f1f1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+.timeline li:last-child{
+  padding-bottom: 0;
+}
+
+.timeline li:last-child a{
+  position: relative;
+  display: inline-block;
+  width: 156px;
+  height: 156px;
+  background: orange;
+  border-radius: 50%;
+  border: 6px solid #f1f1f1;
+  text-decoration: none;
+} 
+.timeline li:last-child a>div {
+  margin-top: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 30px;
+  font-weight: 700;
+}
+/* .timeline li:last-child a>div{
+  position: absolute;
+  top: 36px;
+  left: 30px;
+  width: 97px;
+  height: 90px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white; 
+} */
+.timeline li:nth-child(odd)>div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 340px;
+  padding: 0 20px 0 100px;
+  text-align: right;
+}
+.timeline li:nth-child(even)>div{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 340px;
+  padding: 0 100px 0 20px;
+  text-align: left;
+}
+.timeline li time{
+  font-weight: bold;
+  font-size: 1.17em;
+}
+.timeline li h3{
+  margin: 8px 0;
+}
+.timeline li p{
+  color: #777;
+}
+
+
+
+/*team* ***************************************************************/
+.team .content{
+  text-align: center;
+  padding: 150px 0;
+  background: #f1f1f1;
+}
+.team .content>h1 {
+  text-transform: uppercase;
+}
+.team .content>p {
+  font-style:italic;
+  color: #777;
+}
+.team .content .main {
+  display: flex;
+  margin: 40px 106px;
+  justify-content: space-around;
+}
+.team .content .staff>img{
+  border-radius: 50%;
+  border: 6px solid #f1f1f1;
+}
+.team .content .staff>p {
+  margin-top: 0;
+}
+.team .content .staff>h3 {
+  margin-bottom: 5px;
+}
+.team .content .bottom {
+  width: 755px;
+  margin: 0 auto;
+}
+
+/*contact* ***************************************************************/
+.contact .content{
+  text-align: center;
+  padding: 150px 0;
+  background: url("http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/若愚/16/img/map-image.png");
+  background-color:#222;
+}
+.contact .content>h1 {
+  text-transform: uppercase;
+  color: white;
+}
+.contact .content>p {
+  font-style:italic;
+  color: #777;
+}
+.contact .content .main>form .layout {
+  padding: 0 80px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.contact .content .main input {
+  box-sizing: border-box;
+  width: 560px;
+  height: 60px;
+  border-radius: 5px;
+}
+.contact .content .main textarea {
+  width: 560px;
+  height: 235px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+}
+.contact .content .main button{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 23px 40px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/*footer* ***************************************************************/
+#footer .contain {
+  padding: 10px 0;
+  width: 1024px;
+  margin: 0 auto;
+}
+#footer .contain .left {
+  padding: 16px 0;
+  float: left;
+}
+#footer .contain .right {
+  padding: 16px 0;
+  float: right;
+}
+#footer .contain .middle {
+  text-align: center;
+}
+#footer .contain .middle a {
+
+  color: black;
+  font-size: 42px;
+  text-decoration: none;
+}
+
+
+

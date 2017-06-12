@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>10-4</title>
+	<style type="text/css">
+	.contain{
+		width: 600px;
+		height: 36px;
+		margin: auto;
+		border: 1px solid transparent;
+		background: #E8E8E8;
+		box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+	}
+	.contain>div{
+		float: left;
+	}
+	.contain>div {
+		display: inline-block;
+	}
+	.contain>div a{
+		padding: 9px 12px;
+		display: inline-block;
+		text-decoration: none;
+		color: black;
+	}
+	.contain a:hover{
+		background: grey;
+	}
+		
+	div.child{
+		width: 160px;
+		position: absolute;
+		border: 1px solid transparent;
+        display: none;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+        background: white;
+	}
+	div.child a{
+		display: block;
+	}
+	.contain div:hover .child{
+		display: block;
+	}
+	</style>
+</head>
+<body>
+    <div class="contain">
+        <div><a href="#">首页</a></div>
+        <div><a href="#">作品</a></div>
+        <div><a href="#">更多</a>
+            <div class="child">
+            <a href="#">GitHub</a>
+            <a href="#">博客</a>
+            <a href="#">知乎</a>
+            </div>
+        </div>
+        <div><a href="#">作品</a></div>
+    </div>
+
+</body>
+</html>

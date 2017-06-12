@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="双栏" />
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .contain{
+      max-width: 800px;
+      border: 1px solid;
+      margin: 0 auto;
+    }
+    aside{
+      width: 150px;
+      background: grey;
+      min-height: 300px;
+      float: left;
+    }
+    main{
+      min-height: 500px;
+      background: black;
+      margin-left: 160px;
+      margin-right: 150px;
+    }
+    .contain div{
+      min-height: 300px;
+      background: grey;
+      width: 140px;
+      float: right;
+    }
+    .clearfix:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+<div class="contain clearfix">
+  <aside></aside>
+  <div></div>
+  <main></main>
+</div>
+</body>
+</html>
